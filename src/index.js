@@ -1,16 +1,13 @@
 'use strict';
 
 const targetValue = Number(prompt('Enter number'));
+// debugger;
 
 function gettingNumber(targetValue) {
   const firstCoef = 3;
   const secondCoef = 5;
 
-  if (
-    targetValue <= 0 ||
-    targetValue === NaN ||
-    typeof targetValue != 'number'
-  ) {
+  if (targetValue <= 0 || isNaN(targetValue)) {
     return `Entered wrong data! Please, reload page and try again.`;
   }
 
